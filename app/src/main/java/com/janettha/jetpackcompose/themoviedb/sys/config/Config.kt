@@ -5,6 +5,14 @@ import com.janettha.jetpackcompose.themoviedb.BuildConfig
 
 interface Constants {
 
+    class Images {
+
+        companion object {
+            const val GALLERY_CODE = 1
+        }
+
+    }
+
     class Permission {
 
         companion object {

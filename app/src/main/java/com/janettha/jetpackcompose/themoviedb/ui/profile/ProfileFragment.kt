@@ -44,8 +44,8 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         with(binding) {
-            textViewProfileUser.setText("Janettha")
-            textViewProfileEmail.setText("aksjd@fsdf.c")
+            textViewProfileUser.text = "Janettha"
+            textViewProfileEmail.text = "aksjd@fsdf.c"
             /*
             recyclerViewPopularMovie.apply {
                 layoutManager = LinearLayoutManager(context)

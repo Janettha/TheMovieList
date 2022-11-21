@@ -22,11 +22,11 @@
         android:name="LocationList"
         android:label="fragment_location_list"
         tools:layout="@layout/fragment_map" />
-
+-->
     <fragment
         android:id="@+id/fragment_images"
-        android:name="Images"
+        android:name="com.janettha.jetpackcompose.themoviedb.ui.load_images.LoadImagesFragment"
         android:label="fragment_images"
-        tools:layout="@layout/fragment_load_images" />-->
+        tools:layout="@layout/fragment_load_images" />
 
 </navigation>
