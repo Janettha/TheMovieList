@@ -1,0 +1,1 @@
+package com.janettha.jetpackcompose.themoviedb.data.datasource.web.modelimport com.google.gson.annotations.SerializedNamedata class PopularMovieSectionResponse (        @SerializedName("page") val page: Int,        @SerializedName("results") val movieList: List<PopularMovieResponse>,        @SerializedName("total_pages") val pages: Int)
