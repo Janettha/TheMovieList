@@ -4,5 +4,5 @@ import com.google.firebase.firestore.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 data class RequestToken(
-    val requestToken: String = ""
+    val request_token: String = ""
 )

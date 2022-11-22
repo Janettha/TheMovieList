@@ -11,16 +11,17 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp">
 
             <TextView
                 android:id="@+id/text_view_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/gray_EAECEF"
+                android:gravity="center"
                 android:text="@string/qu_vas_a_ver_hoy"
-                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                android:textColor="@color/blue_500"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/blue_700"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -33,9 +34,19 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/populares"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textColor="@color/sky_200"
+                android:textColor="@color/green_700"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_title" />
+
+            <TextView
+                android:id="@+id/text_view_popular_movies_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/popular_description_string"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/text_view_populares_movies"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_populares_movies" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_popular_movies"
@@ -45,7 +56,7 @@
                 android:clipToPadding="false"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_view_populares_movies"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_popular_movies_description"
                 tools:itemCount="1"
                 tools:listitem="@layout/item_fragment_movie_list" />
 
@@ -57,9 +68,19 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/mejores_calificadas"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textColor="@color/sky_200"
+                android:textColor="@color/green_700"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recycler_view_popular_movies" />
+
+            <TextView
+                android:id="@+id/text_view_top_rated_movies_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/top_rated_description_string"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/text_view_populares_movies"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_top_rating_movies" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_top_rating_movies"
@@ -69,7 +90,7 @@
                 android:clipToPadding="false"
                 android:orientation="horizontal"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_view_top_rating_movies"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_top_rated_movies_description"
                 tools:itemCount="1"
                 tools:listitem="@layout/item_fragment_movie_list" />
 
@@ -81,9 +102,19 @@
                 android:layout_marginTop="15dp"
                 android:text="@string/recomendaciones"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                android:textColor="@color/sky_200"
+                android:textColor="@color/green_700"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/recycler_view_top_rating_movies" />
+
+            <TextView
+                android:id="@+id/text_view_recommendation_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/recommendation_description_string"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/text_view_populares_movies"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_recommendation_movies" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view_recommendation_movies"
@@ -95,7 +126,7 @@
                 android:orientation="horizontal"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/text_view_recommendation_movies"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_recommendation_description"
                 tools:itemCount="1"
                 tools:listitem="@layout/item_fragment_movie_list" />
 

@@ -41,5 +41,8 @@
     <string name="populares">Populares</string>
     <string name="mejores_calificadas">Mejores Calificadas</string>
     <string name="recomendaciones">Para ti</string>
+    <string name="popular_description_string">Lista de películas populares actuales en TMDB (actualizada diariamente).</string>
+    <string name="top_rated_description_string">Las películas mejor calificadas en TMDB.</string>
+    <string name="recommendation_description_string">Próximas películas en los cines.</string>
 
 </resources>

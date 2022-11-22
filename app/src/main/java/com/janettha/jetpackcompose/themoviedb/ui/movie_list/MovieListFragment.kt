@@ -75,16 +75,13 @@ class MovieListFragment : Fragment() {
     // region PRIVATE
     private fun subscribeObservableStreams() {
         viewModel.onGetPopularMovieSection.observe(viewLifecycleOwner) { result ->
-            if (result != null)
-                onGetPopularMovieSection(result)
+            onGetPopularMovieSection(result)
         }
         viewModel.onGetTopRatedMovieSection.observe(viewLifecycleOwner) { result ->
-            if (result != null)
-                onGetTopRatedMovieSection(result)
+            onGetTopRatedMovieSection(result)
         }
         viewModel.onGetRecommendationMovieSection.observe(viewLifecycleOwner) { result ->
-            if (result != null)
-                onGetRecommendationMovieSection(result)
+            onGetRecommendationMovieSection(result)
         }
     }
 

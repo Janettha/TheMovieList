@@ -28,9 +28,12 @@ object UseCaseModulesModule {
     @Provides
     fun providesProfileUseCases(
         useCase0: GetTokenProfileUseCase,
-        useCase1: GetSessionProfileUseCase
+        useCase1: GetSessionAuthenticationProfileUseCase,
+        useCase2: GetSessionProfileUseCase,
+        useCase3: GetProfileDetailsUseCase,
+        useCase4: GetProfileRatedMoviesUseCase
     ): ProfileUseCases {
-        return ProfileUseCases(useCase0, useCase1)
+        return ProfileUseCases(useCase0, useCase1, useCase2, useCase3, useCase4)
     }
 
 }

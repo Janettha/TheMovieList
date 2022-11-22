@@ -21,7 +21,7 @@
                 android:id="@+id/image_view_to_load"
                 android:layout_width="300dp"
                 android:layout_height="300dp"
-                android:layout_margin="5dp"
+                android:layout_marginTop="20dp"
                 android:background="@drawable/ic_picture_placeholder"
                 android:contentDescription="@string/no_data_found"
                 android:scaleType="fitXY"
@@ -53,10 +53,11 @@
 
         <TextView
             android:id="@+id/text_view_instructions"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/gray_EAECEF"
             android:gravity="center"
+            android:textColor="@color/blue_700"
             android:text="@string/save_image_to_load_in_firebase"
             android:textAppearance="?attr/textAppearanceHeadline6"
             app:layout_constraintEnd_toEndOf="parent"

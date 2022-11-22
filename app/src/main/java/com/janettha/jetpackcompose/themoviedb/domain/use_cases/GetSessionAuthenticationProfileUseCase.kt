@@ -11,13 +11,13 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
-class GetSessionProfileUseCase @Inject constructor(
+class GetSessionAuthenticationProfileUseCase @Inject constructor(
     private val repository: ProfileRepository,
     @IoDispatcher private val dispatcher: CoroutineDispatcher
 ) {
-    suspend operator fun invoke(requestToken: String): Resource<ProfileSessionModel?> =
+    suspend operator fun invoke(requestToken: String): Resource<ProfileTokenModel?> =
         withContext(dispatcher) {
-            repository.getSessionProfile(requestToken).map { res ->
+            repository.getSessionAuthenticationProfile(requestToken).map { res ->
                 when (res) {
                     is Resource.Error -> null
 

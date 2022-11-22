@@ -59,6 +59,33 @@ object UseCasesModule {
     fun provideGetSessionAuthenticationProfileUseCase(
         repo0: ProfileRepository,
         @IoDispatcher dispatcher: CoroutineDispatcher
+    ): GetSessionAuthenticationProfileUseCase {
+        return GetSessionAuthenticationProfileUseCase(repo0, dispatcher)
+    }
+
+    @Singleton
+    @Provides
+    fun provideGetSessionProfileUseCase(
+        repo0: ProfileRepository,
+        @IoDispatcher dispatcher: CoroutineDispatcher
+    ): GetSessionProfileUseCase {
+        return GetSessionProfileUseCase(repo0, dispatcher)
+    }
+
+    @Singleton
+    @Provides
+    fun provideGetProfileDetailsUseCase(
+        repo0: ProfileRepository,
+        @IoDispatcher dispatcher: CoroutineDispatcher
+    ): GetSessionProfileUseCase {
+        return GetSessionProfileUseCase(repo0, dispatcher)
+    }
+
+    @Singleton
+    @Provides
+    fun provideGetProfileMovieRatedUseCase(
+        repo0: ProfileRepository,
+        @IoDispatcher dispatcher: CoroutineDispatcher
     ): GetSessionProfileUseCase {
         return GetSessionProfileUseCase(repo0, dispatcher)
     }
