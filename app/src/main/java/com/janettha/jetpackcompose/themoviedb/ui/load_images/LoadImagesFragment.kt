@@ -114,20 +114,23 @@ class LoadImagesFragment : Fragment() {
     }
 
     private fun loadImageData(data: Uri?) {
-        val bitmap = MediaStore.Images.Media.getBitmap(this.context?.contentResolver, Uri.parse(
-            imageUri.toString()
-        ))
+        val bitmap = MediaStore.Images.Media.getBitmap(
+            this.context?.contentResolver, Uri.parse(
+                imageUri.toString()
+            )
+        )
 
         val stream = ByteArrayOutputStream()
         bitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream)
         val imageInByte: ByteArray = stream.toByteArray()
-        val lengthbmp = imageInByte.size.toLong()
+        val lengthBmp = imageInByte.size.toLong()
 
-        Log.d(mTag, "loadImageData: " +
-                "size: $lengthbmp \n" +
-                "uri: ${data?.path}")
+        Log.d(
+            mTag, "loadImageData: " +
+                    "size: $lengthBmp \n" +
+                    "uri: ${data?.path}"
+        )
     }
-
     // endregion
 
 }

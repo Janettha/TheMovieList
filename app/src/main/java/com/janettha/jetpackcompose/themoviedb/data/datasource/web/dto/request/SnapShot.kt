@@ -1,4 +1,4 @@
-package com.janettha.jetpackcompose.themoviedb.data.datasource.web.model
+package com.janettha.jetpackcompose.themoviedb.data.datasource.web.dto.request
 
 import com.google.firebase.firestore.IgnoreExtraProperties
 

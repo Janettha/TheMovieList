@@ -5,6 +5,7 @@ plugins {
     id 'kotlin-kapt'
     id 'dagger.hilt.android.plugin'
     id 'com.google.gms.google-services'
+    id 'com.google.android.libraries.mapsplatform.secrets-gradle-plugin'
 }
 
 android {
@@ -55,6 +56,7 @@ android {
 
             buildConfigField "String", "WS_SERVICE", "\"https://api.themoviedb.org/3/\""
             buildConfigField "String", "API_KEY", "\"1c096026e612c26dd5ffecff4cb88dcc\""
+            buildConfigField "String", "MAPS_API_KEY", "\"AIzaSyDJj7HA4B-HjA8IgVC0NFyezCgLgX-H49o\""
         }
     }
 }
@@ -89,6 +91,9 @@ dependencies {
     // groupie
     implementation "com.github.lisawray.groupie:groupie:2.10.0"
     implementation "com.github.lisawray.groupie:groupie-viewbinding:2.10.0"
+
+    // permission
+    implementation 'pub.devrel:easypermissions:3.0.0'
 
     // hilt
     implementation "com.google.dagger:hilt-android:2.40.1"

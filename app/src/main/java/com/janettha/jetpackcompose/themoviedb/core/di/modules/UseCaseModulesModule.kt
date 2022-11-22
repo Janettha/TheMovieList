@@ -12,11 +12,13 @@ import javax.inject.Singleton
 @Module
 @InstallIn(SingletonComponent::class)
 object UseCaseModulesModule {
+
     @Singleton
     @Provides
     fun providesLoginUseCases(
-            useCase0: GetMovieListUseCase
+        useCase0: GetMovieListUseCase
     ): MovieUseCases {
         return MovieUseCases(useCase0)
     }
+
 }

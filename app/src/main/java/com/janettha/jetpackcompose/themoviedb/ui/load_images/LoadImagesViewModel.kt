@@ -18,7 +18,7 @@ import javax.inject.Inject
 class LoadImagesViewModel @Inject constructor(
     private val useCases: PhotoFirebaseUseCases,
     private val app: Application
-): ViewModel() {
+) : ViewModel() {
 
     private val _isLoading = MutableLiveData(false)
     val isLoading = _isLoading

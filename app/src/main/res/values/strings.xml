@@ -2,6 +2,7 @@
     <string name="app_name">TheMovieDB</string>
     <string name="profile_string">Perfil</string>
     <string name="movies_string">Películas</string>
+    <string name="trask_location_string">Rastrear</string>
     <string name="location_list_string">Ubicaciones</string>
     <string name="current_location_string">Ubicación Actual</string>
     <string name="images_string">Imágenes</string>
@@ -10,6 +11,10 @@
     <string name="save_image_to_load_in_firebase">Guardar imagenes en Firebase</string>
     <string name="lorem_ipsum_string">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
     <string name="success">Resultados concluidos.</string>
+    <string name="load_image">Subir imagen</string>
+    <string name="load_foto_warning_data">Seleccione una foto distinta.</string>
+    <string name="track_location_user_in_firebase">Seguimiento de ubicación</string>
+    <string name="start">Iniciar</string>
 
     <!-- Error String -->
     <string name="error">Error</string>
@@ -19,6 +24,18 @@
     <string name="select_a_photo">Por favor, seleccione una foto.</string>
     <string name="fields_cannot_be_empty">Los campos no deben estar vacios.</string>
     <string name="no_data_found">No data found.</string>
-    <string name="load_image">Subir imagen</string>
-    <string name="load_foto_warning_data">Seleccione una foto distinta.</string>
+    <string name="no_network_connection">No hay conexión de red, intente de nuevo.</string>
+    <string name="error_server">Error en el servidor.</string>
+
+    <!-- region Location y Notification -->
+    <string name="activate_track_location">Activar</string>
+    <string name="start_track_location">Iniciar</string>
+    <string name="location_permission_denied_text">Permisos denegados</string>
+    <string name="settings">Configuración</string>
+    <string name="real_time_location">Ubicación en tiempo real</string>
+    <string name="warning_permission">Los permisos de ubicación son necesarios para el correcto funcionamiento de la aplicación.</string>
+    <string name="real_time_location_start">Activar ubicación en tiempo real</string>
+    <string name="real_time_location_pause_finished">Ubicación en tiempo real finalizada.</string>
+    <string name="notification_location_real_time_string">Ir a la sección de mapas para ver más detalles.</string>
+
 </resources>

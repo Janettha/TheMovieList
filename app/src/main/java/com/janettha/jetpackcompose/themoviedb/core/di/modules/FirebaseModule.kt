@@ -3,8 +3,10 @@ package com.janettha.jetpackcompose.themoviedb.core.di.modules
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.storage.FirebaseStorage
+import com.janettha.jetpackcompose.themoviedb.domain.LocationUseCases
 import com.janettha.jetpackcompose.themoviedb.domain.repository.FirebaseRepository
 import com.janettha.jetpackcompose.themoviedb.domain.PhotoFirebaseUseCases
+import com.janettha.jetpackcompose.themoviedb.domain.use_cases.LocationUseCase
 import com.janettha.jetpackcompose.themoviedb.domain.use_cases.PhotoFirebaseUseCase
 import dagger.Module
 import dagger.Provides
@@ -36,12 +38,12 @@ class FirebaseModule {
         )
     }
 
-    /*@Provides
+    @Provides
     @Singleton
-    fun provideLocationUseCases(repositor: FirebaseRepositoryLocation): LocalCases {
-        return LocalCases(
-            postLocationUseCase = PostLocationUseCase(repositor)
+    fun provideLocationFirebaseUseCases(repository: FirebaseRepository): LocationUseCases {
+        return LocationUseCases(
+            locationUseCase = LocationUseCase(repository)
         )
-    }*/
+    }
 
 }

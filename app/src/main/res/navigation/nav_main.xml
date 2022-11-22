@@ -16,6 +16,13 @@
         android:name="com.janettha.jetpackcompose.themoviedb.ui.movie_list.MovieListFragment"
         android:label="fragment_movies"
         tools:layout="@layout/fragment_movie_list" />
+
+    <fragment
+        android:id="@+id/fragment_trak_location"
+        android:name="com.janettha.jetpackcompose.themoviedb.ui.location.TrackLocationFragment"
+        android:label="fragment_track_location"
+        tools:layout="@layout/fragment_track_location" />
+
 <!--
     <fragment
         android:id="@+id/fragment_location_list"
