@@ -1,7 +1,8 @@
 package com.janettha.jetpackcompose.themoviedb.core.di.modules
 
 import com.janettha.jetpackcompose.themoviedb.domain.MovieUseCases
-import com.janettha.jetpackcompose.themoviedb.domain.use_cases.GetMovieListUseCase
+import com.janettha.jetpackcompose.themoviedb.domain.ProfileUseCases
+import com.janettha.jetpackcompose.themoviedb.domain.use_cases.*
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,10 +16,21 @@ object UseCaseModulesModule {
 
     @Singleton
     @Provides
-    fun providesLoginUseCases(
-        useCase0: GetMovieListUseCase
+    fun providesMovieUseCases(
+        useCase0: GetPopularMovieListUseCase,
+        useCase1: GetTopRatedMovieListUseCase,
+        useCase2: GetRecommendationMovieListUseCase
     ): MovieUseCases {
-        return MovieUseCases(useCase0)
+        return MovieUseCases(useCase0, useCase1, useCase2)
+    }
+
+    @Singleton
+    @Provides
+    fun providesProfileUseCases(
+        useCase0: GetTokenProfileUseCase,
+        useCase1: GetSessionProfileUseCase
+    ): ProfileUseCases {
+        return ProfileUseCases(useCase0, useCase1)
     }
 
 }

@@ -1,6 +1,6 @@
 package com.janettha.jetpackcompose.themoviedb.domain.model
 
-data class PopularMovieModel (
+data class MovieModel (
         val id: Long,
         val title: String,
         val overview: String,

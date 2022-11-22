@@ -17,35 +17,18 @@
             android:layout_height="match_parent"
             android:gravity="center_vertical">
 
-            <ImageView
-                android:id="@+id/image_view_movie"
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/frame_layout_image"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:backgroundTint="@color/gray_EAECEF"
+                app:shimmer_auto_start="false"
+                app:shimmer_base_alpha="1"
+                app:shimmer_highlight_alpha=".5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="parent" />
 
-            <!--<ImageButton
-                android:id="@+id/image_view_details_visibility"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/ic_description"
-                android:backgroundTint="#CFCFCF"
-                app:layout_constraintBottom_toBottomOf="@+id/image_view_movie"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-            <TextView
-                android:id="@+id/text_view_details"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/lorem_ipsum_string"
-                android:textAppearance="?attr/textAppearanceBody2"
-                android:textColor="?android:attr/textColorSecondary"
-                android:visibility="visible"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/image_view_movie" />
-    -->
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </com.google.android.material.card.MaterialCardView>

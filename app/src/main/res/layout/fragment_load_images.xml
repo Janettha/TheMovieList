@@ -19,10 +19,10 @@
 
             <ImageView
                 android:id="@+id/image_view_to_load"
-                android:layout_width="match_parent"
+                android:layout_width="300dp"
                 android:layout_height="300dp"
                 android:layout_margin="5dp"
-                android:background="@drawable/img_not_available"
+                android:background="@drawable/ic_picture_placeholder"
                 android:contentDescription="@string/no_data_found"
                 android:scaleType="fitXY"
                 android:src="@android:color/transparent"
@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/chose_image_to_load"
                 android:textAppearance="?attr/textAppearanceBody2"
-                app:layout_constraintStart_toStartOf="@+id/image_view_to_load"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/image_view_to_load" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

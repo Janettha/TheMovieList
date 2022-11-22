@@ -1,13 +1,12 @@
 package com.janettha.jetpackcompose.themoviedb.ui.profile.adapters
 
 import android.view.View
-import androidx.databinding.Bindable
 import com.janettha.jetpackcompose.themoviedb.databinding.ItemFragmentMovieListBinding
-import com.janettha.jetpackcompose.themoviedb.domain.model.PopularMovieModel
+import com.janettha.jetpackcompose.themoviedb.domain.model.MovieModel
 import com.xwray.groupie.viewbinding.BindableItem
 
 class PopularMovieFragmentItemProfile(
-    private val model: PopularMovieModel
+    private val model: MovieModel
 ): BindableItem<ItemFragmentMovieListBinding>() {
 
     override fun bind(binding: ItemFragmentMovieListBinding, p1: Int) {

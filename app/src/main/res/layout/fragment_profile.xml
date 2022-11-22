@@ -3,6 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+
+        <!--        <import type="Event" />-->
+
+        <!--<variable
+            name="model"
+            type="com.janettha.jetpackcompose.themoviedb.domain.model.ProfileModel" />-->
+
+        <variable
+            name="viewModel"
+            type="com.janettha.jetpackcompose.themoviedb.ui.profile.ProfileViewModel" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -26,6 +39,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="User" />
+<!--            android:text="@{model.user}"-->
 
             <TextView
                 android:id="@+id/text_view_profile_email"
@@ -38,6 +52,8 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_profile_user"
                 tools:text="Email" />
+            <!--            android:text="@{model.email}"-->
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout

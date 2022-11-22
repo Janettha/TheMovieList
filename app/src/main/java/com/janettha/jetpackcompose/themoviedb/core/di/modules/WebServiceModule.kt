@@ -5,6 +5,7 @@ import com.google.gson.FieldNamingPolicy
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import com.janettha.jetpackcompose.themoviedb.data.datasource.web.api.MovieWebService
+import com.janettha.jetpackcompose.themoviedb.data.datasource.web.api.ProfileWebService
 import com.janettha.jetpackcompose.themoviedb.data.datasource.web.api.config.ApiBuilder
 import com.janettha.jetpackcompose.themoviedb.data.datasource.web.api.config.HttpClient
 import com.janettha.jetpackcompose.themoviedb.data.datasource.web.api.config.interceptor.AuthInterceptor
@@ -67,6 +68,14 @@ object WebServiceModule {
             apiBuilder: ApiBuilder
     ): MovieWebService {
         return apiBuilder.build(MovieWebService::class.java)
+    }
+
+    @Singleton
+    @Provides
+    fun providesProfileApi(
+        apiBuilder: ApiBuilder
+    ): ProfileWebService {
+        return apiBuilder.build(ProfileWebService::class.java)
     }
 }
 

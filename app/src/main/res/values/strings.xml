@@ -37,5 +37,9 @@
     <string name="real_time_location_start">Activar ubicación en tiempo real</string>
     <string name="real_time_location_pause_finished">Ubicación en tiempo real finalizada.</string>
     <string name="notification_location_real_time_string">Ir a la sección de mapas para ver más detalles.</string>
+    <string name="qu_vas_a_ver_hoy">¿Qué vas a ver hoy?</string>
+    <string name="populares">Populares</string>
+    <string name="mejores_calificadas">Mejores Calificadas</string>
+    <string name="recomendaciones">Para ti</string>
 
 </resources>
