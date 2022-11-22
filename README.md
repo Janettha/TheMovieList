@@ -7,13 +7,15 @@ Cloud Firestore
 <img width="1135" alt="Captura de pantalla 2022-11-22 a la(s) 12 14 47" src="https://user-images.githubusercontent.com/17371212/203390611-15b92d87-601b-4de9-ab05-4babcba46f70.png">
 
 App :: Movies Section
-![Screenshot_20221122-120314_TheMovieDB](https://user-images.githubusercontent.com/17371212/203390751-aa36a992-d201-42a7-a8d7-06c27b5e1b35.jpg)
+![Screenshot_20221122-164016_TheMovieDB](https://user-images.githubusercontent.com/17371212/203436411-71b25acd-1817-4ff3-b375-2f1843225587.jpg)
+
+![Screenshot_20221122-164029_TheMovieDB](https://user-images.githubusercontent.com/17371212/203436404-9bc28e3f-1b38-4793-9656-d71b7c607cce.jpg)
 
 App :: Maps Section
-![Screenshot_20221122-120321_TheMovieDB](https://user-images.githubusercontent.com/17371212/203391037-7e90db81-acf8-47c2-99fd-ffc1111eba93.jpg)
+![Screenshot_20221122-164102_TheMovieDB](https://user-images.githubusercontent.com/17371212/203436392-01a7f0fe-d08b-49d0-bc0b-caf78d2a672e.jpg)
 
 App :: Images Section
-![Screenshot_20221122-120357_TheMovieDB](https://user-images.githubusercontent.com/17371212/203391060-477b191e-c9df-4929-a9a4-f88317e8b7c7.jpg)
+![Screenshot_20221122-164046_TheMovieDB](https://user-images.githubusercontent.com/17371212/203436378-39ee657b-d9da-44b4-b9c4-8ce88713678b.jpg)
 
 Show movies and profile information according to themoviewdb.org API.
 
